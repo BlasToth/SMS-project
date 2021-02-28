@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel='stylesheet' href='style.css'>
-    <script src="./app.js" defer></script>
+    <script src="/app.js" defer></script>
     <title>SMS-Project</title>
 </head>
 <body>
-    <form>
-        <label>E-mail: <input type="email" id='email' placeholder="Enter your email" required></label>
-        <!-- <label for='password'>Password</label> -->
-        <label>Password: <input type="password" id="password" placeholder="Enter your password" required></label>
+    <button class='login--button'>Login</button>
+    <button class='register--button'>Register</button>
+
+    <form name="login">
+        <div class="login">
+            <p>Login</p>
+            <label>E-mail: <input type="email" id='email' placeholder="Enter your email" required></label>
+            <!-- <label for='password'>Password</label> -->
+            <label>Password: <input type="password" id="password" placeholder="Enter your password" required></label>
+            <button type="submit">Login</button>
+        </div>  
     </form>
     
+    <form name="register">
+        <div class="register">
+            <p>Register</p>
+            <label>E-mail: <input type="email" id='email-register' placeholder="Enter your email" required></label>
+            <label>Password: <input type="password" id="password-register" placeholder="Enter your password" required></label>
+            <label>Confirm password: <input type="password" id="password-confirm" placeholder="Reenter your password" required></label>
+            <button type="submit">Register</button>
+        </div>
+    </form>
 
 </body>
 </html>

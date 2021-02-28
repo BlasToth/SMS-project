@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #21232a;
+  color: white;
+  font-family: helvetica, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  padding: 20px;
+}
+
+.login {
+    display: none;
+    border: 2px solid green;
+}
+
+.register {
+    display: none;
+    border: 2px solid red;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
