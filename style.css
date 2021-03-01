@@ -13,11 +13,19 @@ body {
 .login {
     display: none;
     border: 2px solid green;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    width: 400px;
 }
 
 .register {
     display: none;
     border: 2px solid red;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    width: 400px;
 }
 
 .visible {
@@ -26,4 +34,14 @@ body {
 
 .invisible {
     display: none;
+}
+
+.login--button:focus {
+  background-color: green;
+  border-radius: 5px;
+}
+
+.register--button:focus {
+  background-color: red;
+  border-radius: 5px;
 }
