@@ -1,1 +1,36 @@
-<h1>HI <%= name %></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS-Project</title>
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class='login--button'>Login</button>
+    <button class='register--button'>Register</button>
+
+    <form name="login">
+        <div class="login">
+            <p>Login</p>
+            <label>E-mail: <input type="email" id='email' placeholder="Enter your email" required></label>
+            <!-- <label for='password'>Password</label> -->
+            <label>Password: <input type="password" id="password" placeholder="Enter your password" required></label>
+            <button type="submit">Login</button>
+        </div>  
+    </form>
+    
+    <form name="register">
+        <div class="register">
+            <p>Register</p>
+            <label>E-mail: <input type="email" id='email-register' placeholder="Enter your email" required></label>
+            <label>Password: <input type="password" id="password-register" placeholder="Enter your password" required></label>
+            <label>Confirm password: <input type="password" id="password-confirm" placeholder="Reenter your password" required></label>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+
+</body>
+</html>
